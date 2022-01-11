@@ -1,11 +1,13 @@
 #include "dialog.h"
 #include <QApplication>
 #include <QSettings>
+#include <QIcon>
 
 void setupSettings();
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    a.setWindowIcon(QIcon(":/icon"));
     Dialog w;
     w.show();
 
