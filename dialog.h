@@ -8,6 +8,7 @@
 #include "robot.h"
 #include <QDialog>
 #include <QFileDialog>
+#include <QKeyEvent>
 #include <QMessageBox>
 
 namespace Ui {

@@ -92,7 +92,7 @@ void Exporter::addObstacle(ObstacleBase::ItemType type, ObstacleBase::ItemSize s
 
     std::stringstream pose;
 
-    pose << std::setprecision(5) << std::fixed << " " << x*0.001/0.62 << " " << y*0.001/0.62 << " 0 0 0 " << angle << " ";
+    pose << std::setprecision(5) << std::fixed << " " << x*0.01/0.62 << " " << y*0.01/0.62 << " 0 0 0 " << angle << " ";
 
 
     addEntity(QString::fromStdString(uri.str()), QString::fromStdString(pose.str()),QString::fromStdString(name.str()));
@@ -100,12 +100,12 @@ void Exporter::addObstacle(ObstacleBase::ItemType type, ObstacleBase::ItemSize s
 
 void Exporter::end()
 {
-    addEntity("model://long_black_stripe", " 0.78 0.0 0 0 -0 0 ", "long_stripe_down");
-    addEntity("model://long_black_stripe", " 0.78 1.06 0 0 -0 0 ", "long_stripe_up");
-    addEntity("model://short_black_stripe", " 0.0 0.53 0 0 0 1.5707963268 ", "short_stripe_left");
-    addEntity("model://short_black_stripe", " 1.56 0.53 0 0 0 1.5707963268 ", "short_stripe_right");
-    addEntity("model://short_red_stripe", " 0.2 -0.1 0 0 0 0 ", "short_red_stripe");
-    addEntity("model://arena_ground", " 0.75 0.5 -0.05 0 -0 0 ", "arena_ground");
+    addEntity("model://long_black_stripe", " 7.8 0.0 0 0 -0 0 ", "long_stripe_down");
+    addEntity("model://long_black_stripe", " 7.8 10.6 0 0 -0 0 ", "long_stripe_up");
+    addEntity("model://short_black_stripe", " 0.0 5.3 0 0 0 1.5707963268 ", "short_stripe_left");
+    addEntity("model://short_black_stripe", " 15.6 5.3 0 0 0 1.5707963268 ", "short_stripe_right");
+    addEntity("model://short_red_stripe", " 2.0 -1.0 0 0 0 0 ", "short_red_stripe");
+    addEntity("model://arena_ground", " 7.5 5.0 -0.05 0 -0 0 ", "arena_ground");
 }
 
 

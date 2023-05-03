@@ -179,8 +179,8 @@ void Dialog::on_saveButton_clicked()
                       tx = myitem->mapToParent(myitem->m_placeholder).x();
                       ty = scene->sceneRect().bottom() - myitem->mapToParent(myitem->m_placeholder).y() + m_offset;
                       tyaw = rangeSymm(atan2(myitem->transform().m11(),myitem->transform().m12()));
-                      cmd << " x_" << robot << ":=" << tx*0.001/0.62
-                          << " y_" << robot << ":=" << ty*0.001/0.62
+                      cmd << " x_" << robot << ":=" << tx*0.01/0.62
+                          << " y_" << robot << ":=" << ty*0.01/0.62
                           << " yaw_" << robot << ":=" << tyaw;
                       robot++;
                       break;
