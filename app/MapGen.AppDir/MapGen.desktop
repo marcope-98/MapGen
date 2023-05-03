@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=MapGen
+Exec=mapgen
+Icon=MapGen
+Type=Application
+Categories=Utility

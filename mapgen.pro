@@ -24,28 +24,28 @@ RESOURCES += resources.qrc
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
-
+INCLUDEPATH += ./include
 
 SOURCES += \
-        main.cpp \
-        dialog.cpp \
-    handle.cpp \
-    obstacle.cpp \
-    obstaclebase.cpp \
-    exporter.cpp \
-    gate.cpp \
-    misc.cpp \
-    robot.cpp
+        src/main.cpp \
+        src/dialog.cpp \
+    	src/handle.cpp \
+    	src/obstacle.cpp \
+    	src/obstaclebase.cpp \
+    	src/exporter.cpp \
+    	src/gate.cpp \
+    	src/misc.cpp \
+    	src/robot.cpp
 
 HEADERS += \
-        dialog.h \
-    handle.h \
-    obstacle.h \
-    obstaclebase.h \
-    exporter.h \
-    gate.h \
-    misc.h \
-    robot.h
+        include/dialog.h \
+    	include/handle.h \
+    	include/obstacle.h \
+    	include/obstaclebase.h \
+    	include/exporter.h \
+    	include/gate.h \
+    	include/misc.h \
+    	include/robot.h
 
 FORMS += \
         dialog.ui
