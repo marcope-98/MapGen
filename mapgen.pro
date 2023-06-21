@@ -31,7 +31,7 @@ SOURCES += \
         src/dialog.cpp \
     	src/handle.cpp \
     	src/obstacle.cpp \
-    	src/obstaclebase.cpp \
+    	src/Base.cpp \
     	src/exporter.cpp \
     	src/gate.cpp \
     	src/misc.cpp \
@@ -41,7 +41,7 @@ HEADERS += \
         include/dialog.h \
     	include/handle.h \
     	include/obstacle.h \
-    	include/obstaclebase.h \
+    	include/Base.h \
     	include/exporter.h \
     	include/gate.h \
     	include/misc.h \
